@@ -34,10 +34,16 @@ public class Program {
 			System.out.println(s);
 		}
 		
-		System.out.println("=== TEST 3: seller insert ===");
+		System.out.println("=== TEST 4: seller insert ===");
 		Seller seller1 = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, dep);
 		sellerDao.insert(seller1);
 		System.out.println("Inserted! New id = " + seller1.getId());
+		
+		System.out.println("=== TEST 5: seller update ===");
+		Seller seller2 = sellerDao.findById(1);
+		seller2.setName("Martha Waine");
+		sellerDao.update(seller2);
+		System.out.println("Update completed!");
 		
 	}
 
