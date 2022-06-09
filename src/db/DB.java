@@ -38,7 +38,7 @@ public class DB {
 
 	private static Properties loadProperties() {
 
-		try (FileInputStream fs = new FileInputStream("db.properties")) {
+		try (FileInputStream fs = new FileInputStream("C:\\Users\\TESTE\\Documents\\Projetos eclipse\\21 - Acesso a banco de dados com JDBC\\demo-dao-jdbc\\src\\db.properties")) {
 
 			Properties props = new Properties();
 			props.load(fs);
